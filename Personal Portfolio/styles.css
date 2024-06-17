@@ -10,3 +10,8 @@
     position: fixed;
     top: 0;
 }
+
+.project:hover .invisible {
+    color: #ff7f50;
+  }
+  

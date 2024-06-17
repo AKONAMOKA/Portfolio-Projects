@@ -1,10 +1,9 @@
 html{
     background-color: seashell;
 }
-
 body{
     background-color: black;
-    margin: 0;
+    margin: 0 0 0 0;
     font-family:  Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
@@ -19,6 +18,7 @@ header{
     position: fixed;
     width: 90%;
     background-color: black;
+    z-index: 999;
 }
 section{
     text-align: center;
@@ -37,7 +37,7 @@ section{
     color: seashell;
 }
 .mission{
-    width: 1200px;
+    width: 100%;
     height: 700px;
     margin: 0 auto;
     display: flex;
@@ -58,7 +58,8 @@ section{
     margin-bottom: 1%;
 }
 .tea-of-month{
-    height: 700px;
+    height: max-content;
+    margin-bottom: 75px;
 }
 .tea-of-month h2{
     margin-top: 6%;
@@ -69,7 +70,7 @@ section{
 
 }
 .globalcontainer{
-    width: 1000px;
+    width: 100%;
     height: max-content;
     margin-left: auto;
     margin-right: auto;
@@ -94,11 +95,12 @@ section{
 }
 .locationcontainer{
     text-align: center;
-    height: 500px;
+    height: min-content;
     display: block;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*3btni1*_ga*MTQ0MTMwNzU0OS4xNjg4NzEwMjA0*_ga_3LRZM6TM9L*MTY5NjMzNDY0OS43MS4xLjE2OTYzMzQ2NTQuNTUuMC4w);
-    background-position-y: -80px;
-    width: 1200px;
+    background-position-y: center;
+    background-size: cover;
+    width: 100%;
     padding-top: 1px;
     margin-left: auto;
     margin-right: auto;
@@ -112,6 +114,7 @@ section{
     opacity: 1;
     position: relative;
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 20px;
     margin-right: 20px;
     vertical-align: top;
