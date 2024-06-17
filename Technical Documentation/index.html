@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  </head>
+  
+  <body>
+    
+    <nav id="navbar">
+      <header>Table Documentation</header>
+      <ul>
+        <li class="nav-list"><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li class="nav-list"><a href="#what_you_should_already_know" class="nav-link">What you should already know</a></li>
+        <li class="nav-list"><a href="#what_you'll_learn" class="nav-link">What you'll learn</a></li>
+        <li class="nav-list"><a href="#what_is_a_table" class="nav-link">What is a table</a></li>
+        <li class="nav-list"><a href="#main_syntax" class="nav-link">Main Syntax</a></li>
+        <li class="nav-list"><a href="#table_styling" class="nav-link">Table Styling</a></li>
+        <li class="nav-list"><a href="#example" class="nav-link">Example</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>Tables are essential components of web development, offering a structured means to present data. This guide is tailored to cater to both beginners and experienced developers, aiming to provide thorough insights into crafting and manipulating HTML tables effectively.</p>
+        <p> HTML tables play a crucial role in organizing and displaying data in a coherent manner on web pages. Understanding their usage and nuances can significantly enhance the user experience and accessibility of your website. Throughout this documentation, we'll delve into various aspects of HTML tables, from basic structure to advanced techniques.</p></p>
+      </section>
+      <section class="main-section" id="what_you_should_already_know">
+        <header>What you should already know</header>
+        <p>Before delving into the intricacies of tables in web development, it's assumed that you have a basic understanding of HTML and CSS. Familiarity with the following concepts will be beneficial:</p>
+        <ul>
+          <li><span>HTML Basics:</span> You should be comfortable with HTML tags, attributes, and the overall structure of HTML documents. Understanding elements such as &lt;div&gt;, &lt;span&gt;, and how to create and nest them will be helpful when working with tables.</li>
+          <li><span>CSS Fundamentals: </span>An understanding of Cascading Style Sheets (CSS) is essential for styling tables and controlling their appearance. Knowledge of CSS selectors, properties, and values is necessary to apply styles to table elements effectively.</li>
+          <li><span>Box Model: </span>Understanding the box model concept in CSS, including margin, border, padding, and content areas, will aid in designing visually appealing tables and controlling their layout.</li>
+          <li><span>Responsive Web Design: </span>Familiarity with responsive web design principles and techniques is crucial, especially when creating tables that adapt to different screen sizes. Concepts such as media queries and flexible layouts are fundamental for building responsive tables.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="what_you'll_learn">
+        <header>What you'll learn</header>
+        <p>In this comprehensive guide to HTML tables, you will gain an understanding of how to effectively use tables in your web development projects. By the end of this tutorial, you will be able to:</p>
+        <ol>
+            <li><span>Understand html table structure</span></li>
+            <li><span>Create an html table</span></li>
+            <li><span>See a real example of Html table</span></li>
+        </ol>
+
+      </section>
+      <section class="main-section" id="what_is_a_table">
+        <header>What is a table</header>
+        <p>An HTML table is a fundamental component of web development used to organize and present data in rows and columns on a web page. It consists of one or more rows, each containing cells arranged into columns. Tables are created using HTML markup, with elements such as &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; defining the structure, rows, header cells, and data cells respectively. HTML tables provide a structured layout that helps users interpret data more efficiently and are commonly used for tasks such as displaying data sets, creating forms, and designing layouts on websites.</p>
+      </section>
+      <section class="main-section" id="main_syntax">
+        <header>Main Syntax</header></br>
+        <code>&lt;table&gt;</code>
+        <p></p>
+        <code>&lt;tr&gt;</code>
+        <p></p>
+        <code>&lt;th&gt;</code>
+        <p></p>
+        <code>&lt;td&gt;</code>
+        <p></p>
+        <code>&lt;caption&gt;</code>
+        <p></p>
+      </section>
+      <section class="main-section" id="table_styling">
+        <header>Table Styling</header>
+        <p>Tables can be styled using CSS to enhance their appearance and improve readability. Developers can apply styles to various table elements such as borders, background colors, font properties, and spacing.</p>
+      </section>
+      <section class="main-section" id="example">
+        <header>Example</header>
+        <table>
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>30</td>
+                  <td>USA</td>
+              </tr>
+              <tr>
+                  <td>Mary</td>
+                  <td>25</td>
+                  <td>Canada</td>
+              </tr>
+              <tr>
+                  <td>David</td>
+                  <td>40</td>
+                  <td>UK</td>
+              </tr>
+              <tr>
+                <td>Lisa</td>
+                <td>35</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>28</td>
+                <td>Germany</td>
+            </tr>
+          </tbody>
+      </table>
+      </section>
+    </main>
+    <script>
+      // Get the element whose width you want to measure
+  const elementToMeasure = document.getElementById('navbar');
+  
+  // Get the width of the element
+  const width = elementToMeasure.offsetWidth;
+  
+  // Set the width value to a CSS variable
+  document.documentElement.style.setProperty('--navbarwidth', width + 'px');
+  
+    </script>
+  </body>
+</html>

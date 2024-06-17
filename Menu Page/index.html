@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu Suggestion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Menu Suggestion</h1>
+    <p id="description">Fill out the form and suggest new dishes for our restaurant</p>
+    <form id="survey-form" >
+      <label id="name-label" for="name">First Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+      <label id="last-name-label" for="last-name">Last Name <input id="last-name" placeholder="Enter your last name" type="text"/></label>
+      <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+      <label id="number-label" for="number">Age <input id="number" min="0" max="150" type="number" placeholder="Enter your age"/></label>
+      <label for="drop-down">
+        Choose a country you are from: 
+        <select name="countries" id="dropdown"  required>
+            <option value="">---Select your country---</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="chi">China</option>
+            <option value="ind">India</option>
+            <option value="ger">Germany</option>
+            <option value="rus">Russia</option>
+            <option value="mex">Mexico</option>
+            <option value="other">Other</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Choose your preferrings: </legend>
+        <label for="meat"><input id="meat" type="radio" name="prefering" value="meat" class="inline"  checked/>Meateater</label>
+        <label for="vegan"><input id="vegan" type="radio" name="prefering" value="vegan" class="inline"/>Vegan</label>
+        <label for="vegetarian"><input id="vegetarian" type="radio" name="prefering" value="vegetarian" class="inline"/>Vegetarian</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your favorite cuisine: </legend>
+        <label for="mex"><input class="inline" type="checkbox" name="cuisine" id="mex" value="mex">Mexican</label>
+        <label for="thai"><input class="inline" type="checkbox" name="cuisine" id="thai" value="thai">Thai</label>
+        <label for="ita"><input class="inline" type="checkbox" name="cuisine" id="ita" value="ita">Italian</label>
+        <label for="chi"><input class="inline" type="checkbox" name="cuisine" id="chi" value="chi">Chinese</label>
+        <label for="ind"><input class="inline" type="checkbox" name="cuisine" id="ind" value="ind">Indian</label>
+        <label for="fra"><input class="inline" type="checkbox" name="cuisine" id="fra" value="fra">French</label>
+        <label for="jap"><input class="inline" type="checkbox" name="cuisine" id="jap" value="jap">Japanise</label>
+      </fieldset>
+      <p>Write your suggestion: </p>
+      <textarea name="Suggestion" id="Suggestion" cols="30" rows="10" placeholder="I'd like to eat..."></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>

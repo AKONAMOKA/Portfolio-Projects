@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-bottom: 80px;
+    background-color: #242222;
+    color: white
+}
+nav{
+    min-width: 280px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    border-right: 2px rgb(117, 117, 117) solid;
+    max-width: 350px;
+    background-color: #242222;
+
+    
+}
+nav .nav-list{
+    list-style-type: none;
+    display: block;
+    font-size: 20px;
+    padding: 19px 10px 19px 25px;
+    box-sizing: content-box;
+    border: 2px solid rgb(131, 131, 131);
+    border-right: 0px;
+    border-radius: 10px;
+    height: 29px;
+
+}
+nav ul{
+    padding: 0px 0px 0px 0px;
+    height: 110%;
+}
+span{
+    font-weight: 900;
+}
+nav header{
+    margin-left: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+#main-doc{
+    margin-left: calc(var(--navbarwidth) + 10px);
+}
+
+header{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+    #main-doc{
+        margin-left: 0px;
+        margin-top: 70px;
+        width: 100%;
+    }
+    body{
+        margin-top: 1px;
+        display: block;
+    }
+    nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        max-width: 100%;
+        width: 100%;
+
+    }
+    
+    nav header{
+        width: 8em;
+        line-height: 28px;
+        border: 2px solid rgb(131, 131, 131);
+        background-color: rgb(255, 255, 255);
+        color: #242222;
+        vertical-align: middle;
+        padding: 5px;
+        font-size: 5vw;
+        text-wrap: pretty;
+        margin: 0;
+        border-radius: 10px;
+        text-align: center;
+    }
+    nav ul{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        height: 70px;
+    }
+    nav .nav-list{
+        display: block;
+        inline-size: auto;
+        text-align: center;
+        padding: 10px;
+        height: 70px;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-wrap: pretty;
+
+    }
+    .nav-link{
+        vertical-align: middle;
+        display: inline-block;
+        line-height: normal;
+        width: 137px;
+    }
+}
+
+
+
+
+
+table,th,thead,tbody,td{
+    border: 3px rgb(136, 136, 136) solid;
+    text-align: center;
+}
+th,td{
+    width: 10%;
+    height: 35px;
+}
