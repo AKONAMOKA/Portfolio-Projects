@@ -14,4 +14,26 @@
 .project:hover .invisible {
     color: #ff7f50;
   }
+
+
+#projects{
+    padding: 10px 30px;
+}
+.projects-grid{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+
+.project-tile{
+    display: block;
+
+  }
+
+.project-tile img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+} 
   
