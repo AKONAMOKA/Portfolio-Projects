@@ -4,13 +4,50 @@
     margin: 0;
 
     font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    scroll-behavior: smooth;
+
 }
 
 #navbar{
     position: fixed;
     top: 0;
+    background: linear-gradient(90deg, rgb(0, 0, 160),rgb(0, 0, 73));
+    width: 100%;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.176);
+    display: flex;
+    justify-content: end;
 }
-
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    
+}
+.nav-list li{
+    display: block;
+    padding: 20px;
+    font-size: 24px;
+}
+ 
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(64, 64, 64), rgb(33, 33, 33));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+}
+.p-italica{
+    font-style: italic;
+    color: rgb(0, 0, 201);
+    font-weight: 300;
+}
 .project:hover .invisible {
     color: #ff7f50;
   }
@@ -18,6 +55,16 @@
 
 #projects{
     padding: 10px 30px;
+    background-color: #005873;
+}
+#projects h1{
+    font-size: 35px;
+    border-bottom: 2px solid white;
+    width: 500px;
+    height: 1.5em ;
+    font-weight: 700;
+    text-align: center;
+    margin: 110px auto 50px auto;
 }
 .projects-grid{ 
     display: grid;
